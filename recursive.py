@@ -1,3 +1,4 @@
+# Factorial of a number using recursion
 def factorial(n):
     assert n>=0 and int(n) == n, "input can only be integers"
 
@@ -28,3 +29,23 @@ def fibonacci(n):
 
 print(fibonacci(-7))
 
+
+def powerOfTwo(n):
+    if n==0:
+        return 1
+    else:
+        power=powerOfTwo(n-1)
+        power=power*2
+        return power
+        print(power)
+
+print(powerOfTwo(5))
+
+
+#product of Array - productOfArray([1,2,3]) #6
+def productOfArray(arr):
+    res = 1
+    
+    for i in arr:
+        res = res * i
+    return res
